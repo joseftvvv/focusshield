@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Startseite FocusShield Webshop</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header role="banner">
+    <div class="nav-container">
+        <div class="logo">
+            <a href="index.html" aria-label="FocusShield Startseite"><span>Focus</span>Shield</a>
+        </div>
+        <nav role="navigation" aria-label="Hauptnavigation">
+            <ul>
+                <li><a href="index.html" class="active">Shop</a></li>
+                <li><a href="about.html" >Über uns</a></li>
+                <li><a href="lizenz.html" >Lizenz EULA</a></li>
+                <li><a href="datenschutz.html" >Datenschutz</a></li>
+                <li><a href="impressum.html" >Impressum und Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main id="main-content" role="main">
+    <section class="hero">
+<h1>Maximale Konzentration</h1>
+<p>FocusShield kombiniert wissenschaftlich erprobte Fokus-Methoden mit auditiver Abschirmung, um Ihre Produktivität zu steigern.</p>
+<!--Aufgabe 2-->
+<div class="media-container">
+    <video autoplay loop muted playsinline aria-label="Demonstrationsvideo: Fokus Hintergrund">
+        <source src="344380_tiny.mp4" type="video/mp4">
+    </video>
+</div>
+</section>
+
+<section id="features">
+<h2>Kernfunktionen der Anwendung</h2>
+<ul>
+    <div style="margin-bottom: 2rem; border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color);">
+        <img src="brett-jordan-0rXUP7Tg7nQ-unsplash.jpg" alt="Nahaufnahme eines Smartphone-Displays mit einem Timer-Icon" style="width: 100%; height: auto; display: block;">
+    </div>
+    <li><strong>Intelligenter Pomodoro-Timer:</strong> Automatisierte Wechsel zwischen Arbeitsphasen und Pausen.</li>
+    <li><strong>Smarter Distraction-Blocker:</strong> Sperrung ablenkender Webseiten.</li>
+    <li><strong>Auditive Abschirmung:</strong> Soundlandschaften zur Neutralisierung von Störgeräuschen.</li>
+</ul>
+
+<!-- Aufgabe 2 und 3 Demonstration der Hörmarke -->
+<div class="interactive-box">
+    <h3>Erleben Sie unsere Hörmarke</h3>
+    <p>Dieses akustische Signal ertönt zum Abschluss einer Fokus-Session.</p>
+    <button class="btn" onclick="document.getElementById('brand-sound').play()">Hörmarke abspielen</button>
+    <audio id="brand-sound" preload="auto">
+        <source src="https://actions.google.com/sounds/v1/alarms/digital_watch_alarm_long.ogg" type="audio/ogg">
+    </audio>
+</div>
+</section>
+
+<section id="shop">
+<h2>Wählen Sie Ihre Lizenz (Geschäftsmodell)</h2>
+<div class="shop-grid">
+    <div class="card">
+        <div>
+            <h3>FocusShield Free</h3>
+            <div class="price">0 € <span style="font-size:1rem; font-weight:normal; color:var(--text-muted);">/ dauerhaft</span></div>
+            <p>Der ideale Einstieg für Studierende.</p>
+            <ul class="features-list">
+                <li>&check; Basis Pomodoro-Timer</li>
+                <li>&times; Keine Hintergrund-Sounds</li>
+            </ul>
+        </div>
+        <button class="btn" style="background-color: var(--border-color);" onclick="alert('Basisversion geladen!')">Kostenlos starten</button>
+    </div>
+
+    <div class="card featured">
+        <div>
+            <h3 style="color:var(--primary);">FocusShield Premium Pro</h3>
+            <div class="price">14,99 € <span style="font-size:1rem; font-weight:normal; color:var(--text-muted);">/ Einmalzahlung</span></div>
+            <p>Voller Funktionsumfang für maximale Produktivität.</p>
+            <ul class="features-list">
+                <li>&check; Alle Funktionen</li>
+                <li>&check; Unbegrenzter Webseiten-Blocker</li>
+            </ul>
+        </div>
+        <button class="btn" onclick="alert('Kaufprozess simuliert!')">Jetzt erwerben</button>
+    </div>
+</div>
+</section>
+</main>
+<footer role="contentinfo">
+    <p>&copy; 2026 FocusShield Software GmbH. Alle Rechte vorbehalten.</p>
+    <nav aria-label="Fußzeilen-Navigation">
+        <a href="barrierefreiheit.html" >Barrierefreiheitserklärung</a> | 
+        <a href="impressum.html">Kontakt</a>
+    </nav>
+</footer>
+</body>
+</html>
